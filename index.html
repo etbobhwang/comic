@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsComic - 用漫畫看新聞</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="location.href='/'">
+                    <span class="font-black text-2xl tracking-tighter text-blue-600">NEWS<span class="text-black">COMIC</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                   <!--
+                    <a href="index.php" class="text-blue-600 font-bold">首頁</a>
+                    <a href="list.php" class="text-gray-400 hover:text-gray-600 text-sm">後台管理</a>
+                    -->
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-500 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        
+                <section class="mb-10">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <span class="w-2 h-6 bg-blue-600 mr-2 rounded"></span>
+                本日頭條
+            </h2>
+            <a href="content/8.html" class="block group relative rounded-2xl overflow-hidden shadow-lg bg-white md:flex h-auto md:h-96 hover:shadow-2xl transition duration-300 border border-gray-100">
+                <div class="md:w-3/5 h-64 md:h-full relative overflow-hidden bg-gray-200">
+                    <img src="images/8.jpg" alt="頭條" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/800x600?text=News+Comic'">
+                    <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded shadow-md">BREAKING</div>
+                </div>
+                <div class="p-6 md:p-10 md:w-2/5 flex flex-col justify-center relative">
+                    <div class="text-blue-600 font-bold text-sm mb-2 tracking-wide">
+                        政治 • 
+                        2025/12/30                    </div>
+                    <h1 class="text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-4 group-hover:text-blue-600 transition">
+                        「正義使命-2025」軍演風雲：台海緊張時刻                    </h1>
+                    <p class="text-gray-500 mb-6 line-clamp-3 text-sm">
+                        中共解放軍發動「正義使命-2025」軍演，台灣國防部迅速應對，展現海空監控能力及全面備戰姿態。國軍以實力捍衛和平，堅定守護民主自由。                    </p>
+                    <div class="flex items-center mt-auto">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-xs font-bold mr-2">N</div>
+                        <span class="text-sm font-bold text-gray-700">新聞漫畫小組</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+        
+        <section>
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="text-xl font-bold flex items-center">
+                    <span class="w-2 h-6 bg-gray-800 mr-2 rounded"></span>
+                    最新發布
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                        <article onclick="location.href='content/7.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/7.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                生活                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                地牛翻身！震撼全台的12月地震驚魂                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/30</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/6.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/6.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                生活                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                失智症家庭的日常」與「30歲的老人危機」                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/23</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/5.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/5.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                政治                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                政治獻金攻防戰：公平與信任的交鋒                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/23</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/4.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/4.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                社會                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                女警的失控言論                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/23</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/3.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/3.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                生活                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                捷運驚魂：隨機攻擊事件回顧                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/23</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/2.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/2.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                政治                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                test                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/23</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                        <article onclick="location.href='content/1.html'" class="bg-white rounded-xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-gray-100">
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="images/1.jpg" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" onerror="this.src='https://via.placeholder.com/400x300?text=News+Comic'">
+                            <span class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">
+                                生活                            </span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 line-clamp-2">
+                                水族館抽菸被小白鯨教訓了！吸菸有害健康                            </h3>
+                            <div class="mt-auto pt-4 flex justify-between items-center border-t border-gray-50 text-xs text-gray-400">
+                                <span>2025/12/30</span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg> 
+                                    VIEW
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                                                </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-black text-2xl mb-2">NEWS<span class="text-blue-500">COMIC</span></p>
+            <p class="text-gray-500 text-sm mb-6">用漫畫的角度，帶你看懂世界的脈動。</p>
+            <p class="text-gray-600 text-xs">© 2025 NewsComic Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
